@@ -1,14 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-const SongList = (title, artist, genre, rating) => {
-  const [songs, setSongs] = useState([]);
-
-  const addSongs = () => {
-    setSongs([
-      ...songs,
-      { title: title, artist: artist, genre: genre, rating: rating },
-    ]);
-  };
+const SongList = (props) => {
   return (
     <div style={{ maxWidth: "70%", margin: "0 auto" }} id="songTable">
       <table style={{ width: "100%", marginTop: "5em" }}>
@@ -18,10 +10,10 @@ const SongList = (title, artist, genre, rating) => {
           <th>Genre</th>
           <th>Rating</th>
         </tr>
-        {songs.map((song) => {
+        {props.songs.map((song, index) => {
           return (
-            <tr>
-              <td>{songs.song.title}</td>
+            <tr key={index}>
+              <td>{song.title}</td>
               <td>{song.artist}</td>
               <td>{song.genre}</td>
               <td>{song.rating}</td>
