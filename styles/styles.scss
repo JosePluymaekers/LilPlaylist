@@ -1,0 +1,45 @@
+.header {
+  max-width: auto;
+  height: 80px;
+  background-color: darkcyan;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+}
+
+.main {
+  max-width: auto;
+  margin: auto;
+  background-color: cadetblue;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  color: #fff;
+  background-color: darkcyan;
+}
+input,
+label {
+  margin-right: 5px;
+}
+
+td {
+  background-color: cadetblue;
+  padding: 5px;
+  color: black;
+}
+
+th {
+  width: 25%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
